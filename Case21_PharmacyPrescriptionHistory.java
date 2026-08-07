@@ -60,11 +60,11 @@ class MyStack {
             System.out.println("History is empty");
             return;
         }
-        System.out.println("\n--- Prescription History ---");
+        System.out.println("\nPrescription History:");
         for (int i = top; i >= 0; i--) {
             arr[i].printInfo();
         }
-        System.out.println("---------------------------\n");
+        System.out.println();
     }
 }
 

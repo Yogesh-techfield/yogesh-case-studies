@@ -143,7 +143,7 @@ public class Case48_NationalBloodBankNetwork {
         System.out.println("Shortest travel time from " + names[src] + ":");
         for (int i = 0; i < n; i++) {
             if (i != src) {
-                System.out.println(" -> To " + names[i] + ": " + dist[i] + " mins");
+                System.out.println("To " + names[i] + ": " + dist[i] + " mins");
             }
         }
     }
@@ -158,7 +158,7 @@ public class Case48_NationalBloodBankNetwork {
         System.out.print("BFS Network Nodes: ");
         while (!q.isEmpty()) {
             int curr = q.poll();
-            System.out.print(names[curr] + " | ");
+            System.out.print(names[curr] + " ");
 
             for (Edge edge : graph.get(curr)) {
                 if (!vis[edge.dest]) {
@@ -171,7 +171,7 @@ public class Case48_NationalBloodBankNetwork {
     }
 
     public static void main(String[] args) {
-        System.out.println("--- 1. Queue (Hospital Requests) ---");
+        System.out.println("1. Queue Hospital Requests");
         Queue<Request> q = new LinkedList<>();
         q.add(new Request(1, "City Hospital", "O+"));
         q.add(new Request(2, "St Jude Clinic", "AB-"));
@@ -181,7 +181,7 @@ public class Case48_NationalBloodBankNetwork {
             q.poll().show();
         }
 
-        System.out.println("\n--- 2. Merge Sort (Sorting Stock) ---");
+        System.out.println("\n2. Merge Sort Stock Sorting");
         BloodBank[] banks = {
             new BloodBank(103, "Central Bank", 400),
             new BloodBank(101, "Red Cross", 150),
@@ -193,7 +193,7 @@ public class Case48_NationalBloodBankNetwork {
             b.show();
         }
 
-        System.out.println("\n--- 3. Binary Search ---");
+        System.out.println("\n3. Binary Search");
         Arrays.sort(banks, (a, b) -> a.id - b.id);
         BloodBank found = binarySearch(banks, 102);
         if (found != null) {
@@ -201,7 +201,7 @@ public class Case48_NationalBloodBankNetwork {
             found.show();
         }
 
-        System.out.println("\n--- 4. Graph (BFS & Dijkstra) ---");
+        System.out.println("\n4. Graph BFS and Dijkstra");
         int nodes = 4;
         String[] names = {"BloodBank", "Hospital A", "Hospital B", "Clinic C"};
         ArrayList<ArrayList<Edge>> graph = new ArrayList<>();

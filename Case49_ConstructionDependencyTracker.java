@@ -108,14 +108,14 @@ public class Case49_ConstructionDependencyTracker {
     }
 
     public static void main(String[] args) {
-        System.out.println("--- 1. Linked List ---");
+        System.out.println("1. Linked List");
         TaskLinkedList list = new TaskLinkedList();
         list.add(new Task(10, "Excavation", 7));
         list.add(new Task(20, "Foundation", 10));
         list.add(new Task(30, "Framing", 14));
         list.display();
 
-        System.out.println("\n--- 2. Binary Search ---");
+        System.out.println("\n2. Binary Search");
         Task[] tasks = {
             new Task(10, "Excavation", 7),
             new Task(20, "Foundation", 10),
@@ -127,7 +127,7 @@ public class Case49_ConstructionDependencyTracker {
             found.show();
         }
 
-        System.out.println("\n--- 3. Graph (BFS & DFS) ---");
+        System.out.println("\n3. Graph BFS and DFS");
         int n = 4;
         String[] names = {"Excavation", "Foundation", "Framing", "Finishing"};
         ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
