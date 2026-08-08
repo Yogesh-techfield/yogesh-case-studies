@@ -1,35 +1,37 @@
-# Data Structures and Algorithms Case Studies
+This repository has my DSA case study solutions for questions 21, 48, and 49 implemented in Java.  
 
-Name: Yogesh  
-Branch: B.Tech CSE  
+### Question 21)
+Pharmacy Prescription History (Stack)  
+**The Problem**  
+Doctors sometimes need to reverse the last prescription change quickly, since medication errors can be dangerous.  
 
-This repository contains my DSA case study solutions for questions 21, 48, and 49 implemented in Java.
+**Logic used:**  
+Models a hospital system where doctors add prescriptions and used pop() to undo accidental dosage mistakes in O(1) time.  
 
-## Case Studies Included
+### Question 48)
+National Blood Bank Coordination Network  
+**The Problem**  
+Blood has a short shelf life and hospitals need it urgently during emergencies. The network needs to find and deliver the right blood type fast, from wherever it's available.  
 
-### Case 21: Pharmacy Prescription History Management
-Data Structure Used: Stack
-Description: Implementation of a stack to manage prescription history and perform undo operations when a doctor updates or changes dosage by mistake.
-File: Case21_PharmacyPrescriptionHistory.java
+**Logic used:**  
+- Queue: Processes hospital blood requests in FIFO order.  
+- Merge Sort: Sorts blood banks by available inventory.  
+- Binary Search: Locates specific blood bank by ID.  
+- Dijkstra's Algorithm: Calculates shortest delivery time from blood bank to hospital instead of using weighted graph.  
+- BFS: Traverses network graph to confirm hospital reachability.  
 
-### Case 48: National Blood Bank Coordination Network
-Data Structures & Algorithms Used: Queue, Merge Sort, Binary Search, Dijkstra's Algorithm, BFS
-Description: Program to handle hospital blood requests in a queue, sort blood banks based on available stock using merge sort, search blood bank records using binary search, and calculate shortest delivery routes using Dijkstra algorithm.
-File: Case48_NationalBloodBankNetwork.java
+### Question 49)
+AI-Powered Construction Project Dependency Tracker  
 
-### Case 49: AI-Powered Construction Project Dependency Tracker
-Data Structures & Algorithms Used: Linked List, Binary Search, Graph (BFS and DFS)
-Description: Program to track construction tasks using linked list, search task details using binary search, and trace task dependencies and delay impacts using graph traversals (BFS and DFS).
-File: Case49_ConstructionDependencyTracker.java
+**Logic used:**  
+- Custom Linked List (TaskLinkedList): Dynamic addition and iteration of construction tasks.  
+- Binary Search: Quick lookup of construction task by ID.  
+- Graph (Adjacency List): Represents task dependencies.  
+- BFS: Tracks delay ripple effects across downstream dependent tasks.  
+- DFS: Traces full task execution sequence from start to finish.  
 
 ## How to Run
 
-1. Open terminal or command prompt in this directory.
-2. Compile the Java files:
-   javac Case21_PharmacyPrescriptionHistory.java
-   javac Case48_NationalBloodBankNetwork.java
-   javac Case49_ConstructionDependencyTracker.java
-3. Run the compiled classes:
-   java Case21_PharmacyPrescriptionHistory
-   java Case48_NationalBloodBankNetwork
-   java Case49_ConstructionDependencyTracker
+1. Open terminal or command prompt in this directory.  
+2. Compile the Java files and then  
+3. Run the compiled classes or you can download the code yourself and see also the code  
